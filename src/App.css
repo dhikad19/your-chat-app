@@ -1,0 +1,303 @@
+/* CHAT STYLES */
+* {
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  letter-spacing: 0.5px;
+}
+
+.ce-chat-list {
+  background-color: rgba(141, 194, 133, 0.637) !important;
+}
+
+.ce-chats-container {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+h1{
+  color: #0A5E2AFF;
+  font-size: 25px;
+}
+
+.ce-active-chat-card {
+  background-color: #0A5E2AFF !important;
+  border: 5px solid #0A5E2AFF !important;
+  border-radius: 10px !important;
+  color: white;
+}
+
+.ce-chat-subtitle-text {
+  color: white !important;
+}
+
+.ce-chat-form-container {
+  padding-bottom: 20px !important;
+}
+
+.ce-text-input {
+  border-radius: 6px !important;
+  border: 1px solid #0A5E2AFF !important;
+}
+
+.ce-primary-button {
+  border-radius: 6px !important;
+  background-color: #0A5E2AFF !important;
+  position: relative;
+  bottom: 1px;
+}
+
+.ce-danger-button {
+  background-color: rgb(203, 250, 196) !important;
+  border-radius: 22px !important;
+}
+
+.ce-settings {
+  background-color: rgb(203, 250, 196) !important;
+}
+
+.ce-autocomplete-input {
+  border-radius: 6px !important;
+  border: 1px solid #0A5E2AFF !important;
+}
+
+.ce-autocomplete-options {
+  border-radius: 15px !important;
+  border: 1px solid #0A5E2AFF !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.ce-chat-settings-container {
+  padding-top: 12px !important;
+}
+
+.ce-chat-avatars-row {
+  display: none !important;
+}
+
+/* CUSTOM FEED */
+
+.chat-feed {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgb(203, 250, 196);
+}
+
+.chat-title-container {
+  width: calc(100% - 50px);
+  padding: 15px;
+  text-align: center;
+}
+
+.chat-title {
+  color: #0A5E2AFF;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.chat-subtitle {
+  color: rgb(0, 34, 13);
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.message-row {
+  float: left;
+  width: 100%;
+  display: flex;
+  margin-left: 18px;
+}
+
+.message-block {
+  width: 100%;
+  display: inline-block;
+}
+
+.message-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
+}
+
+.message {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  max-width: 60%;
+}
+
+.message-image {
+  margin-right: 18px;
+  object-fit: cover;
+  border-radius: 6px;
+  height: 30vw;
+  /* width: 30vw; */
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.read-receipts {
+  position: relative;
+  bottom: 6px;
+}
+
+.read-receipt {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  margin: 1.5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+.input-color{
+  background-color: rgba(92, 218, 73, 0.473);
+}
+
+.message-form-container {
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 36px);
+  padding: 18px;
+  background-color: transparent;
+}
+
+.message-form {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(112, 153, 104, 0.418);
+  background-color: white;
+}
+
+.message-input {
+  height: 40px;
+  width: calc(100% - 132px);
+  background-color: white;
+  border: 1px solid white;
+  padding: 0px 18px;
+  outline: none;
+  font-size: 15px;
+}
+
+.image-button {
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px 12px;
+  height: 100%;
+}
+
+.send-button {
+  height: 42px;
+  background-color: white;
+  border: 1px solid white;
+  padding: 0px 18px;
+  cursor: pointer;
+}
+
+.send-icon {
+  top: 1px;
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.picture-icon {
+  top: 1px;
+  position: relative;
+  font-size: 14px;
+}
+
+/* FORM STYLES */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62,5%;
+}
+
+.wrapper {
+  height: 100vh;
+	width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.685);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.form {
+  width: 400px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 2.3em;;
+}
+
+.button {
+  width: 180px;
+  height: 55px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.685);
+  outline: none;
+  transition: 1s ease-in-out;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.button:hover {
+  transition: 1s ease-in-out;
+  background: rgba(255, 255, 255, 0.685);
+  color: #333;
+}
+
+.button:hover svg {
+  stroke-dashoffset: -480;
+  color: black;
+}
+
+.button span {
+  font-size: 18px;
+  font-weight: 100;
+}
